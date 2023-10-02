@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="{{ url_for('static', filename='css/home.css') }}"
+    />
+    <title>Home</title>
+  </head>
+  <body  >
+    <div class="image-container">
+      <div class="background_img">
+        <img src="{{ url_for('static', filename='images/register_page.jpg') }}">
+    </div>
+      <div class="image-box">
+        <a href="{{ url_for('student') }}"><img src="static\images\student.jpg" alt="student" class="img2" />
+        <p>Student</p></a>
+      </div>
+      <div class="image-box">
+        <a href="{{ url_for('teacher') }}"><img src="static\images\teacher.jpg" alt="teacher" class="img2" />
+        <p>Teacher</p></a>
+      </div>
+      <div class="image-box">
+        <a href="{{ url_for('attendance') }}"><img src="static\images\attendance.jpg" alt="attendance" class="img2" />
+        <p>Attendance</p></a>
+      </div>
+      <div class="image-box">
+        <a href="{{ url_for('analysis') }}"><img src="static\images\analysis.jpg" alt="analysis" class="img2" />
+        <p>Analysis</p></a>
+      </div>
+    </div>
+  </body>
+</html>

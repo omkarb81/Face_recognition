@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+    <title>Face Recognization</title>
+    <style>
+        
+        @media screen and (max-width:995px){
+        body{
+            background-image: url("{{ url_for('static', filename='images/bg-mobile2.png') }}");
+        }}
+    </style>
+</head>
+<body>
+    
+    <div class="bigger">
+        <div class="background_img">
+        <img src="{{ url_for('static', filename='images/register_page.jpg') }}">
+    </div>
+    <div class="left-cont" >
+             <img class="logo" src="{{ url_for('static', filename='images/logo.jpg') }}" alt="face logo">
+             <h1 class="left-head">Face Recognization <br> Attendence System</h1>
+        </div>
+        <div class="right-cont">
+            <h1 class="right-head">Attendence System<br>Login to Continue..</h1>
+        <div class="Login-in">
+    <form action="/" method="POST" >
+        <div class="Login-info">
+            <input type="text" name="email" placeholder="email" >
+            <input type="password" name="password" placeholder="password"> 
+        </div>
+            <button class="button-1" type="submit">Login</button>
+        </div>
+    </form>
+        <div class="button-login" >
+            <a href="new-user.html" class="New">New User</a>
+            <a href="forget-password.html" class="New">Forget Password</a>
+        </div>
+    </div>
+</div>
+<script src="{{ url_for('static', filename='js/style.js') }}"></script>
+</body>
+</html>

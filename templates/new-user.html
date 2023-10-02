@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/new-user.css') }}" />
+    <title>New-user</title>
+    <style>
+      @media screen and (max-width: 995px) {
+        body {
+          background-image: url("{{ url_for('static', filename='images/bg-mobile2.png') }}");
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="background_img">
+        <img src="{{ url_for('static', filename='images/register_page.jpg') }}">
+    </div>
+      <h1>Registration Form</h1>
+        <form id="myForm" action="/new-user.html" method="POST"> 
+          <div class="label_name">
+            <div>
+              <label for="first_name">First name:</label>
+              <input
+                type="text"
+                name="first_name"
+                placeholder="First name"
+                required
+              />
+              <br />
+              <br />
+            </div>
+            <div>
+              <label for="last_name">Last name:</label>
+              <input
+                type="text"
+                name="last_name"
+                placeholder="Last name"
+                required
+              />
+              <br />
+              <br />
+            </div>
+            <div>
+              <label for="email">Email:</label>
+              <input type="email" name="email" placeholder="email" required />
+              <br />
+              <br />
+            </div>
+            <div>
+              <label for="password">Password:</label>
+              <input
+                type="password"
+                name="password"
+                placeholder="password"
+                required
+              />
+              <br />
+              <br />
+            </div>
+            <div>
+              <label for="con_password" class="confirm-password"
+                >Confirm Password:</label
+              >
+              <input
+                class="con-password-in"
+                type="password"
+                name="con_password"
+                placeholder="confirm password"
+                required
+              />
+              <br />
+              <br />
+            </div>
+          </div>
+          <button class="button-1" type="submit">Submit</button>
+        </form>
+      </div>
+    <script src="{{ url_for('static', filename='js/style.js') }}"></script>
+  </body>
+</html>

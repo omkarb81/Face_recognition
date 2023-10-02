@@ -1,0 +1,183 @@
+  @import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@100;200;300;400;500;600;700;800;900&family=Outfit:wght@400;700;900&family=REM:wght@500;700&display=swap');
+
+  * {
+      padding: 0;
+      margin: 0;
+  }
+
+  body {
+      font-family: 'Outfit';
+  }
+
+  .background_img{
+    bottom: 0;
+    left: 0;
+    transform: translateY(20%);
+    background-size: cover;
+    opacity: 0.85;
+    z-index: -1;
+    position: fixed;
+  }
+
+  .bigger {
+      display: flex;
+      align-items: center;
+      justify-content: space-around;
+  }
+
+  .logo {
+      width: 60%;
+      margin-bottom: 30px;
+      position: relative;
+      left: 50px;
+  }
+
+  input {
+      width: 50%;
+      height: 30px;
+      color: black;
+      background-color: white;
+      padding: 10px 15px;
+      margin: 19px 82px;
+      border: 0;
+      border-radius: 40px;
+      font-size: 17px;
+  }
+
+  input::placeholder {
+      font-size: 17px;
+  }
+
+  .Login-in {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-around;
+  }
+
+  .Login-info {
+      display: flex;
+      flex-direction: column;
+      padding-top: 20px;
+  }
+
+  .right-head {
+      color: white;
+      font-size: 60px;
+  }
+
+  input::placeholder {
+      color: black;
+  }
+
+  .right-cont {
+      position: relative;
+      top: 80px;
+  }
+
+  .left-cont {
+      position: relative;
+      top: 60px;
+
+  }
+
+  .left-head {
+      color: white;
+      font-size: 50px;
+  }
+
+  .New {
+      color: white;
+      font-size: 30px;
+      font-weight: 700;
+      text-decoration: none;
+      margin: 40px;
+      transition: 0.5s;
+  }
+
+
+  .button-1 {
+      margin: 21px 80px 21px 121px;
+      background-color: black;
+      padding: 14px 20px;
+      border: 0;
+      border-radius: 40px;
+      color: white;
+      font-weight: 700;
+      font-size: 23px;
+      transition: 0.5s;
+      width: 30%;
+      cursor: pointer;
+  }
+
+  .button-1:hover {
+      transform: scale(1.1);
+  }
+
+  @media screen and (max-width:995px) {
+
+      .bigger {
+          display: flex;
+          flex-direction: column;
+      }
+
+      .left-cont {
+          display: flex;
+          flex-direction: row;
+          margin-left: 20px;
+      }
+
+      .logo {
+          width: 25%;
+          padding: 10px;
+          height: 30%;
+          position: relative;
+          left: 0px;
+          bottom: 20px;
+          margin-bottom: 0;
+      }
+
+      .left-head {
+          font-size: 22px;
+
+      }
+
+      .right-head {
+          font-size: 32px;
+          padding-left: 30px;
+      }
+
+      input {
+          width: 50%;
+          height: 20px;
+          font-size: 20px;
+          margin-left: 36px;
+          padding-left: 75px;
+      }
+
+      .Login-info {
+          padding-left: 18px;
+      }
+
+      .button-login {
+          display: flex;
+          flex-direction: row;
+      }
+
+      .New {
+          font-size: 20px;
+          padding-left: 20px;
+          margin: 27px;
+      }
+
+      .button-1 {
+          padding: 7px 13px;
+          margin: 21px 97px;
+      }
+
+      body {
+          background-image: url("images/bg-mobile2.png");
+          font-family: 'Outfit';
+          background-size: cover;
+      }
+
+  }
